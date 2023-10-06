@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs"); -%>
+<!-- <div class="container">
+  <h2>Compose</h2>
+
+  <form action="/compose" method="post">
+    <h4>Title</h4>
+    <textarea
+      class="form-control"
+      placeholder="Type your title here."
+      name="titleText"
+    ></textarea>
+    <h4>Post</h4>
+    <textarea
+      rows="5"
+      class="form-control"
+      placeholder="Type your post here."
+      name="postText"
+    ></textarea>
+    <br />
+    <button type="submit" name="button">Publish</button>
+  </form>
+</div> -->
+<form action="/compose" method="post">
+  <div class="container">
+    <div class="mb-3 form-group">
+      <label class="form-label">Title</label>
+      <textarea
+        class="form-control"
+        placeholder="Type your title here."
+        name="postTitle"
+      ></textarea>
+
+      <label class="form-label">Post</label>
+      <textarea
+        rows="5"
+        class="form-control"
+        placeholder="Type your post here."
+        name="postBody"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+<%- include("partials/footer.ejs"); -%>
